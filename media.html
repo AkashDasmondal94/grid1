@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            border: 1px solid red;
+            width: 100%;
+            height: 80px;
+            background-color: yellow;
+            font-size: 30px;
+        }
+    #card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        margin-top: 20px;
+        font-size: 30px;
+        height: 200px;
+    }
+    #card>div{
+        border: 1px solid black;
+    }
+    #card>div:nth-child(1){
+        background-color: red;
+    }
+    #card>div:nth-child(2){
+        background-color:green;
+    }
+
+    @media all and (min-width:119px) and (max-width:479px){
+        #card{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+        }
+        #card>div:nth-child(1){
+            order: 9;
+        }
+        #card>div:nth-child(2){
+            order: 10;
+        }
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="nav">Navigation</div>
+    <div id =card>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX</div>
+        
+    </div>
+
+</body>
+</html>

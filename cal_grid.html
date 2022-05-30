@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+            color: teal;
+            font-size: 40px;
+        }
+        #calculator{
+            width: 500px;
+            height: 400px;
+            border: 1px solid transparent;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+        }
+        #display{
+            
+            width: 70%;
+            height: 50px;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #keyboard{
+            width: 70%;
+            height: 300px;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,70px);
+            gap: 5px;
+
+        }
+        #keyboard>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: px;
+            border-radius: 10px;
+            
+        
+            
+
+        }
+        #keyboard>div:nth-child(4){
+            background-color: black;
+            color: white;
+        }
+        #keyboard>div:nth-child(8){
+            background-color: black;
+            color: white;
+        }
+        #keyboard>div:nth-child(12){
+            background-color: black;
+            color: white;
+        }
+        #keyboard>div:nth-child(16){
+            background-color: black;
+            color: white;
+        }
+            #keyboard>div:nth-child(15){
+            background-color: black;
+            color: white;
+        }
+        #keyboard>div:nth-child(13){
+            background-color: red;
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h3>Masai Calculator</h3>
+    <div id="calculator">
+        <div id="display"></div>
+        <div id="keyboard">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>*</div>
+            <div>C</div>
+            <div>0</div>
+            <div>=</div>
+            <div>/</div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

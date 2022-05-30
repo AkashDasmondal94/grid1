@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+           
+            width: 1000px;
+            height: 500px;
+            margin: auto;
+        }
+        #ist{
+            
+            width: 800px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(2,200px);
+            margin-top: 20px;
+
+            margin:auto;
+            gap: 210px;;
+            
+        }
+        #ist>div:first-child {
+           
+            width: 390px;
+            border-radius: 15px;
+            background-color: 
+#444444;
+            
+        }
+        #ist>div:last-child {
+          
+            width: 390px;
+            border-radius: 15px;
+            background-color:#444444;
+            
+        }
+        #ist>div{
+            font-size: 30px;
+            
+        }
+        #ist>div>p{
+            padding-left: 20px;
+            color:white;
+        }
+
+        #second{
+           
+            width: 800px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(2,200px);
+
+            margin:auto;
+            margin-top: 10px;
+            gap: 70px;
+            
+            
+        }
+        
+
+        #second>div:first-child {
+            
+            width: 250px;
+            border-radius: 15px;
+            background-color: #444444;
+        }
+        #second>div:last-child {
+            
+            width: 530px;
+            border-radius: 15px;
+            background-color: #444444;
+            
+        }
+        #lomba{
+            border: 1px solid black;
+            width: 800px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(2,200px);
+
+            margin:auto;
+            margin-top: 10px;
+            gap: 70px;
+            border-radius: 15px;
+            background-color: #444444;
+            
+        }
+        #lomba>p{
+            color: white;
+            padding-left: 20px;
+            font-size: 40px;
+        }
+        #second>div>p{
+            padding-left: 20px ;
+            font-size: 30px;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="ist">
+            <div>
+                <p>A</p>
+            </div>
+            <div>
+                <p>B</p>
+            </div>
+        </div>
+        <div id="second">
+            <div>
+                <p>C</p>
+            </div>
+            <div>
+                <p>D</p>
+            </div>
+        </div>
+        <div id="lomba">
+            <p>E</p>
+        </div>
+    </div>
+</body>
+</html>
